@@ -1,5 +1,6 @@
 {
-  "name": "my-app",
+  "name": "robofriends",
+  "homepage": "https://henrysaba.github.io/robofriends",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +8,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "bootstrap": "^5.1.3",
+    "gh-pages": "^3.2.3",
     "holderjs": "^2.9.9",
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",
@@ -19,7 +21,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -b master -d build"
   },
   "eslintConfig": {
     "extends": [
